@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mosaddek">
+    <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <link rel="shortcut icon" href="/Content/Admin/img/favicon.png">
+
+    <title>@ViewBag.Title</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/Content/Admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Content/Admin/css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="/Content/Admin/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/Content/Admin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/Content/Admin/css/owl.carousel.css" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="/Content/Admin/css/style.css" rel="stylesheet">
+    <link href="/Content/Admin/css/style-responsive.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/Content/Admin/js/html5shiv.js"></script>
+      <script src="/Content/Admin/js/respond.min.js"></script>
+    <![endif]-->
+   
+</head>
+
+<body>
+
+    <section id="container">
+        <!--header start-->
+        <header class="header white-bg">
+            <div class="sidebar-toggle-box">
+                <div data-original-title="Toggle Navigation" data-placement="right" class="icon-reorder tooltips"></div>
+            </div>
+            <!--logo start-->
+            <a href="/Admin/Index/" class="logo">Deep Web<span> Group</span></a>
+            <!--logo end-->
+            
+            <div class="top-nav ">
+                <!--search & user info start-->
+                <ul class="nav pull-right top-menu">
+                    <li>
+                        <a href="/Home/Index" class="btn btn-primary btn-xs" target="_blank"><i class="icon-exchange"> Siteye Git</i></a>
+                    </li>
+                    <!-- user login dropdown start-->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="/Content/Admin/#">
+                         
+                            <img src="~/Content/Admin/img/blank-profile-picture-973460_960_720.png" width="28" height="28"/>
+                            <span class="username">@User.Identity.Name</span>       <!--user.identity microsoftun giriş işlemleri için bir frameworkudür.-->
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                         
+                            <li><a href="/Admin/CikisYap"><i class="icon-key"></i> Çıkış</a></li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!--search & user info end-->
+            </div>
+        </header>
+        <!--header end-->
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu" id="nav-accordion">
+                    <li>
+                        <a class="active" href="/Admin/Index">
+                            <i class="icon-dashboard"></i>
+                            <span>Anasayfa</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="/Content/Admin/javascript:;">
+                            <i class="icon-desktop"></i>
+                            <span>Profil Yönetimi</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="/Admin/Profiller">Profiller</a></li>
+                            <li><a href="/Admin/ProfilEkle">Profil Ekle</a></li>
+                            <li><a href="/Admin/ProfilAta">Profil Ata</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="/Content/Admin/javascript:;">
+                            <i class="icon-group"></i>
+                            <span>Kullanıcı Yönetimi</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="/Admin/KullaniciListesi">Kullanıcı Listesi</a></li>
+                            <li><a href="/Admin/KullaniciEkle">Kullanici Ekle</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="sub-menu">
+                        <a href="/Content/Admin/javascript:;">
+                            <i class="icon-folder-open-alt"></i>
+                            <span>Kategori Yönetimi</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="/Admin/AnaKategoriListesi">Ana Kategori Listesi</a></li>
+                            <li><a href="/Admin/AnaKategoriEkle">Ana Kategori Ekle</a></li>
+                            <li><a href="/Admin/AltKategoriListesi">Alt Kategori Listesi</a></li>
+                            <li><a href="/Admin/AltKategoriEkle">Alt Kategori Ekle</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="sub-menu">
+                        <a href="/Content/Admin/javascript:;">
+                            <i class="icon-laptop"></i>
+                            <span>Haber Yönetimi</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="/Admin/HaberListesi">Haber Listesi</a></li>
+                            <li><a href="/Admin/HaberEkle">Haber Ekle</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="sub-menu">
+                        <a href="/Content/Admin/javascript:;">
+                            <i class="icon-comments-alt"></i>
+                            <span>Yorum Yönetimi</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="/Admin/YorumListesi">Yorum Listesi</a></li>
+                          
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="/Admin/SifreDegistir">
+                            <i class="icon-user"></i>
+                            <span>Şifre Değiştir</span>
+                        </a>
+                    </li>
+
+
+         
+
+
+                    
+
+
+                    <!--multi level menu end-->
+
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                @RenderBody()
+
+            </section>
+        </section>
+        <!--main content end-->
+        <!--footer start-->
+        <footer class="site-footer">
+            <div class="text-center">
+                2018 &copy; Powered By DeepWeb Group
+              
+            </div>
+        </footer>
+        <!--footer end-->
+    </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="/Content/Admin/js/jquery.js"></script>
+    <script src="/Content/Admin/js/jquery-1.8.3.min.js"></script>
+    <script src="/Content/Admin/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="/Content/Admin/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="/Content/Admin/js/jquery.scrollTo.min.js"></script>
+    <script src="/Content/Admin/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="/Content/Admin/js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="/Content/Admin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="/Content/Admin/js/owl.carousel.js"></script>
+    <script src="/Content/Admin/js/jquery.customSelect.min.js"></script>
+    <script src="/Content/Admin/js/respond.min.js"></script>
+
+    <script class="include" type="text/javascript" src="/Content/Admin/js/jquery.dcjqaccordion.2.7.js"></script>
+
+    <!--common script for all pages-->
+    <script src="/Content/Admin/js/common-scripts.js"></script>
+
+    <!--script for this page-->
+    <script src="/Content/Admin/js/sparkline-chart.js"></script>
+    <script src="/Content/Admin/js/easy-pie-chart.js"></script>
+
+  
+    @RenderSection("bizim",false)
+    <script>
+
+        //owl carousel
+
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                navigation: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true,
+                autoPlay: true
+
+            });
+        });
+
+        //custom select box
+
+        $(function () {
+            $('select.styled').customSelect();
+        });
+
+    </script>
+
+</body>
+</html>

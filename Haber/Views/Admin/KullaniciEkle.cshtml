@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Kullanıcı Ekle - Yönetim Paneli";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@using Haber.Models
+
+<div class="col-lg-12">
+    <section class="panel">
+        <header class="panel-heading">
+            Kullanıcı Ekle
+        </header>
+
+        <div class="panel-body">
+            <form role="form" method="post" action="KullaniciEkle">
+                
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Adı</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1"  maxlength="50" name="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Soyadı</label>
+                    <input type="text" class="form-control" id="validationDefault01" maxlength="50" name="Surname">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Kullanıcı Adı</label>
+                    <input type="text" class="form-control" id="validationDefault01" maxlength="50" name="KulaniciAdi" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Mail</label>
+                    <input type="email" class="form-control" id="validationDefault01" maxlength="75" name="Mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Şifre</label>
+                    <input type="password" class="form-control" id="validationDefault01" maxlength="50" name="Sifre" required>
+                </div>
+                <button type="submit" class="btn btn-info">Kaydet</button>
+            </form>
+            <br />
+            @{
+                if (ViewBag.mesaj != null)
+                {
+                    <div class="alert alert-danger alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>@ViewBag.mesaj!</strong> 
+                    </div>
+                }
+            }
+          
+        </div>
+    </section>
+</div>

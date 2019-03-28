@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "Haber Arama Sonuçları";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+
+@using Haber.Models;
+@using Haber.App_Class
+
+@model ara
+
+
+<div class="container">
+    <div class="content-inner">
+        <div class="row">
+            <div class="col-lg-9">
+                <div id="primary" class="content-area">
+                    <main id="main" class="site-main" role="main">
+
+                        <aside id="news-list-3" class="widget dw_focus_widget_news_list">
+                            <div class="color-blue">
+                                <h2 class="widget-title">
+                                                   <span style="font-size:15px;color:orangered;font-style:italic" >@Model.ArananString Kelimesi için <b>@ViewBag.sonuclar.Count </b> Sonuç Bulundu...</span>
+                                            
+                                </h2>
+
+                                <div class="news-grid">
+                                    @foreach (Haber hbr in ViewBag.sonuclar)
+                                    {
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <article class="post-585 post type-post status-publish format-standard has-post-thumbnail hentry category-entertainment category-music category-tv tag-entertainment-news tag-stage-entertainment">
+                                                    <div class="entry-thumbnail"><a href="/Home/HaberDetay/10"><img width="170" height="130" src="@hbr.Resim.Url" class="attachment-thumbnail size-thumbnail wp-post-image" alt=""></a></div>
+                                                    <h3 class="entry-title"><a href="/Home/HaberDetay/@hbr.id">@hbr.Baslik</a></h3>
+                                                    <div class="entry-meta">
+                                                        <span class="entry-date"><i class="fa fa-clock-o"></i> @hbr.EklenmeTarihi</span>
+                                                        <span class="entry-author"><i class="fa fa-user"></i> @hbr.Yazar</span>
+                                                    </div>
+                                                    <div class="entry-summary">
+                                                        <p>@hbr.KisaAciklama</p>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    }
+
+
+                                </div>
+                            </div>
+                        </aside>
+
+                    </main>
+                </div>
+            </div>
+            <div class="col-lg-3">
+
+                @{
+                    Html.RenderAction("SagSlider", "Home");
+                }
+            </div>
+        </div>
+    </div>
+</div>

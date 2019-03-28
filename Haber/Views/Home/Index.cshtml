@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Hoş Geldiniz";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<div class="container">
+    <div class="content-inner">
+        <div class="row">
+            <div class="col-lg-9">
+                <div id="primary" class="content-area">
+                    <main id="main" class="site-main" role="main">
+                        @{ 
+                            Html.RenderAction("AnaSliderWidget", "Home");
+                            Html.RenderAction("AltKategoriSlider", "Home");
+                        }        		
+                    </main>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                @{ 
+                    Html.RenderAction("SagSlider", "Home");
+                }
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+

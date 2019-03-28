@@ -1,0 +1,139 @@
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\ApplicationInsights.config
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\roslyn\csc.exe
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\roslyn\System.Collections.Immutable.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\roslyn\vbc.exe
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\roslyn\VBCSCompiler.exe
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\roslyn\VBCSCompiler.exe.config
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Haber.dll.config
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Haber.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Haber.pdb
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.AI.Web.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.AI.WindowsServer.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.ApplicationInsights.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.Web.Infrastructure.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\System.Web.Helpers.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\System.Web.Mvc.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\System.Web.Razor.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\System.Web.Webpages.Deployment.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\System.Web.Webpages.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\System.Web.Webpages.Razor.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.AI.Web.xml
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.AI.WindowsServer.xml
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.ApplicationInsights.xml
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\System.Web.Razor.xml
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\System.Web.Webpages.xml
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\System.Web.Webpages.Deployment.xml
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\System.Web.Webpages.Razor.xml
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\System.Web.Helpers.xml
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\bin\System.Web.Mvc.xml
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\obj\Debug\Haber.csprojResolveAssemblyReference.cache
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\obj\Debug\Haber.dll
+c:\users\mustafa\documents\visual studio 2015\Projects\Haber\Haber\obj\Debug\Haber.pdb
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\ApplicationInsights.config
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\roslyn\csc.exe
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\roslyn\vbc.exe
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\roslyn\VBCSCompiler.exe
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Haber.dll.config
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Haber.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Haber.pdb
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.AI.Web.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\System.Web.Helpers.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\System.Web.Mvc.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\System.Web.Razor.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\System.Web.Webpages.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\System.Web.Webpages.Razor.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.AI.Web.xml
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\System.Web.Razor.xml
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\System.Web.Webpages.xml
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\System.Web.Webpages.Razor.xml
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\System.Web.Helpers.xml
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\bin\System.Web.Mvc.xml
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\obj\Debug\Haber.csprojResolveAssemblyReference.cache
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\obj\Debug\Haber.csproj.CoreCompileInputs.cache
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\obj\Debug\Haber.dll
+C:\Users\Hamza TAŞ\source\repos\Haber\Haber\obj\Debug\Haber.pdb
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\ApplicationInsights.config
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\roslyn\csc.exe
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\roslyn\vbc.exe
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\roslyn\VBCSCompiler.exe
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Haber.dll.config
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Haber.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Haber.pdb
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.AI.Web.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\System.Web.Helpers.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\System.Web.Mvc.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\System.Web.Razor.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\System.Web.Webpages.Deployment.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\System.Web.Webpages.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\System.Web.Webpages.Razor.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.AI.Web.xml
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\System.Web.Razor.xml
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\System.Web.Webpages.xml
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\System.Web.Webpages.Deployment.xml
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\System.Web.Webpages.Razor.xml
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\System.Web.Helpers.xml
+C:\Users\MUSTAFA\Desktop\Haber\Haber\bin\System.Web.Mvc.xml
+C:\Users\MUSTAFA\Desktop\Haber\Haber\obj\Debug\Haber.csprojResolveAssemblyReference.cache
+C:\Users\MUSTAFA\Desktop\Haber\Haber\obj\Debug\Haber.dll
+C:\Users\MUSTAFA\Desktop\Haber\Haber\obj\Debug\Haber.pdb

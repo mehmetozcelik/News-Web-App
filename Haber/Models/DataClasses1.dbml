@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="yeni" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=FATIH\SQLEXPRESS;Initial Catalog=yeni;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="yeniConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ARABLAR" Member="ARABLARs">
+    <Type Name="ARABLAR">
+      <Column Name="aracno" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="marka" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="model" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="trafikyil" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="renk" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="yakit" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="kilo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OGRENCİLER" Member="OGRENCİLERs">
+    <Type Name="OGRENCİLER">
+      <Column Name="ogrno" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ograd" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="ogrsoyad" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="velisoyad" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="adres" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="sinif" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="dogumtar" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="alan" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="kangrup" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="dogumyer" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.URUNLER" Member="URUNLERs">
+    <Type Name="URUNLER">
+      <Column Name="urunno" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="urunad" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="uruntanim" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="maliyet" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="karoran" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="kdv" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

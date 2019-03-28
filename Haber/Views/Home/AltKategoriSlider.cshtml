@@ -1,0 +1,61 @@
+﻿
+@using Haber.Models
+@model List<AnaKategori>
+
+
+@foreach (AnaKategori anaktg in ViewBag.anakategoriler)
+{
+    <aside id="news-list-3" class="widget dw_focus_widget_news_list">
+        <div class="color-@anaktg.Renk">
+            <h2 class="widget-title">
+                <a href="/Home/KategoriDetay/@anaktg.id">@anaktg.Adi</a>
+            </h2>	
+            <ul class="sub-categories list-inline hidden-xs">
+                @foreach (AltKategori altktg in ViewBag.altkategoriler)
+                {
+                    if (altktg.AnaKategoriID == anaktg.id)
+                    {
+                        <li>@altktg.Adi</li>
+                    }
+
+                }
+            </ul>   
+            <div class="news-grid">
+                @{ 
+                    int say = 0;
+                }
+                @foreach (Haber hbr in ViewBag.haberler)
+                {
+                   
+                    if (hbr.AltKategori.AnaKategori.id == anaktg.id)
+                    {
+                        <div class="row">
+                            <div class="col-md-12">
+                                <article class="post-585 post type-post status-publish format-standard has-post-thumbnail hentry category-entertainment category-music category-tv tag-entertainment-news tag-stage-entertainment">
+                                    <div class="entry-thumbnail"><a href="/Home/HaberDetay/@hbr.id"><img width="170" height="130" src="@hbr.Resim.Url" class="attachment-thumbnail size-thumbnail wp-post-image" alt=""></a></div>
+                                    <h3 class="entry-title"><a href="/Home/HaberDetay/@hbr.id">@hbr.Baslik</a></h3>
+                                    <div class="entry-meta">
+                                        <span class="entry-date"><i class="fa fa-clock-o"></i> @hbr.EklenmeTarihi</span>
+                                        <span class="entry-author"><i class="fa fa-user"></i> @hbr.Yazar</span>
+                                    </div>
+                                    <div class="entry-summary">
+                                        <p>@hbr.KisaAciklama</p>
+                                    </div>
+                                </article>
+                            </div>
+                            
+                        </div>
+                        say++;
+                        if(say==2)
+                        {
+                            break;
+                        }
+                    }
+
+                }
+               
+            </div>
+        </div>
+    </aside>
+}
+

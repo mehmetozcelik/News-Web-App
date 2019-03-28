@@ -1,0 +1,149 @@
+﻿
+@{
+    ViewBag.Title = "Yönetim Paneli Anasayfa";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row state-overview">
+    <div class="col-lg-3 col-sm-6">
+        <section class="panel">
+            <div class="symbol terques">
+                <i class="icon-user"></i>
+            </div>
+            <div class="value">
+                <h1 class="count"></h1>
+                <p>Toplam Kullanıcı</p>
+            </div>
+        </section>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <section class="panel">
+            <div class="symbol red">
+                <i class="icon-edit"></i>
+            </div>
+            <div class="value">
+                <h1 class="count2"></h1>
+                <p>Toplam Haber</p>
+            </div>
+        </section>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <section class="panel">
+            <div class="symbol yellow">
+                <i class="icon-comments-alt"></i>
+            </div>
+            <div class="value">
+                <h1 class="count3"></h1>
+                <p>Toplam Yorum</p>
+            </div>
+        </section>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <section class="panel">
+            <div class="symbol blue">
+                <i class="icon-bar-chart"></i>
+            </div>
+            <div class="value">
+                <h1 class="count4"></h1>
+                <p>Toplam okunma</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+@section bizim{
+    <script>
+
+
+
+        function countUp(count) {
+            var div_by = @ViewBag.tplamyazar,
+                speed = Math.round(count / div_by),
+                $display = $('.count'),
+                run_count = 0,
+                int_speed = 24;
+
+            var int = setInterval(function () {
+                if (run_count < div_by) {
+                    $display.text(speed * run_count);
+                    run_count++;
+                } else if (parseInt($display.text()) < count) {
+                    var curr_count = parseInt($display.text()) + 1;
+                    $display.text(curr_count);
+                } else {
+                    clearInterval(int);
+                }
+            }, int_speed);
+        }
+
+        countUp(@ViewBag.tplamyazar);
+
+        function countUp2(count) {
+            var div_by = @ViewBag.toplamhaber,
+                speed = Math.round(count / div_by),
+                $display = $('.count2'),
+                run_count = 0,
+                int_speed = 24;
+
+            var int = setInterval(function () {
+                if (run_count < div_by) {
+                    $display.text(speed * run_count);
+                    run_count++;
+                } else if (parseInt($display.text()) < count) {
+                    var curr_count = parseInt($display.text()) + 1;
+                    $display.text(curr_count);
+                } else {
+                    clearInterval(int);
+                }
+            }, int_speed);
+        }
+
+        countUp2(@ViewBag.toplamhaber);
+
+        function countUp3(count) {
+            var div_by = @ViewBag.toplamyorum,
+                speed = Math.round(count / div_by),
+                $display = $('.count3'),
+                run_count = 0,
+                int_speed = 24;
+
+            var int = setInterval(function () {
+                if (run_count < div_by) {
+                    $display.text(speed * run_count);
+                    run_count++;
+                } else if (parseInt($display.text()) < count) {
+                    var curr_count = parseInt($display.text()) + 1;
+                    $display.text(curr_count);
+                } else {
+                    clearInterval(int);
+                }
+            }, int_speed);
+        }
+
+        countUp3(@ViewBag.toplamyorum);
+
+        function countUp4(count) {
+            var div_by =  @ViewBag.toplamokunma,
+                speed = Math.round(count / div_by),
+                $display = $('.count4'),
+                run_count = 0,
+                int_speed = 24;
+
+            var int = setInterval(function () {
+                if (run_count < div_by) {
+                    $display.text(speed * run_count);
+                    run_count++;
+                } else if (parseInt($display.text()) < count) {
+                    var curr_count = parseInt($display.text()) + 1;
+                    $display.text(curr_count);
+                } else {
+                    clearInterval(int);
+                }
+            }, int_speed);
+        }
+
+        countUp4( @ViewBag.toplamokunma);
+</script>
+    
+    }
+

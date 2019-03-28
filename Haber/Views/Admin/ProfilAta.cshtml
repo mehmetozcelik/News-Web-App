@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Profil Ata - Yönetim Paneli";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using Haber.Models 
+
+<div class="col-lg-12">
+    <section class="panel">
+        <header class="panel-heading">
+            Yeni Ana Kategori Ekle
+        </header>
+
+        <div class="panel-body">
+            <form role="form" method="post" action="ProfilAta">
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Kullanıcı Seçiniz</label>
+
+                    <select name="kullaniciadi" class="form-control m-bot15">
+                        @foreach (aspnet_Membership item in ViewBag.Kullanicilar)
+                        {
+                            <option value="@item.aspnet_User.UserName">@item.aspnet_User.UserName </option>
+                        }
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Rol Seçiniz</label>
+
+                    <select name="roladi" class="form-control m-bot15">
+                        @foreach (aspnet_Role item in ViewBag.Roller)
+                        {
+                            <option value="@item.RoleName">@item.RoleName</option>
+                        }
+                    </select>
+
+                </div>
+                <button type="submit" class="btn btn-info">Kullanıcıya Ata</button>
+            </form>
+
+        </div>
+    </section>
+</div>
+
+

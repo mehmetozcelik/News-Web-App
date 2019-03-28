@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Kullanıcı Listesi - Yönetim Paneli";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using Haber.Models
+
+<div class="row">
+    <div class="col-lg-12">
+        @{
+            if (TempData["f"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>@TempData["f"]</strong>
+                </div>
+            }
+        }
+        <section class="panel">
+            <header class="panel-heading">
+              Kullanıcı Listesi
+            </header>
+            <table class="table table-striped table-advance table-hover">
+                <thead>
+                    <tr>
+                        <th><i class="" icon-edit"></i> Adı</th>
+                        <th><i class="icon-bullhorn"></i> Soyadı</th>
+                        <th class="hidden-phone"><i class="icon-question-sign"></i> Kullanıcı Adı</th>
+                        <th><i class="icon-bookmark"></i> Mail</th>
+                        <th><i class="icon-bookmark"></i> Son Girişi</th>
+                  
+                        <th><i class="icon-bookmark"></i> İşlemler</th>
+                  
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (aspnet_Membership item in ViewBag.kullanicilar)
+                    {
+                        <tr>
+                            <td>@item.Name</td>
+                            <td class="hidden-phone">@item.Surname</td>
+                            <td>@item.aspnet_User.UserName</td>
+                            <td>@item.Email</td>
+                            <td>@item.LastLoginDate</td>
+                          
+                       
+                            <td>
+                              
+                                <a href="KullaniciGuncelle/@item.UserId" class="btn btn-primary btn-xs"><i class="icon-pencil"></i></a>
+                                
+                            </td>
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </section>
+    </div>
+</div>
+

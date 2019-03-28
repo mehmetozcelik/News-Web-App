@@ -1,0 +1,13 @@
+.single #page {
+	border: none;
+	padding: 0;
+}
+
+.single .entry-sidebar,
+.single .entry-meta,
+.single .post-navigation,
+.single #secondary,
+.single .comment-respond,
+.single .site-footer {
+	display: none;
+}

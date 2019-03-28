@@ -1,0 +1,141 @@
+﻿
+
+@using Haber.Models
+
+
+<div class="navigation-wrap featured-articles-activated under-navigation-activated">
+    <div class="featured-articles visible-lg lastest">
+        <a class="toggle-featured-articles">
+            <strong>@DateTime.Now.Day</strong>@{ if (DateTime.Now.Month == 1)
+                { <P>OCAK</P>}
+                if (DateTime.Now.Month == 2)
+                { <P>ŞUBAT</P>}
+                if (DateTime.Now.Month == 3)
+                {  <P>MART</P>}
+                if (DateTime.Now.Month == 4)
+                {  <P>NİSAN</P>}
+                if (DateTime.Now.Month == 5)
+                { <P>MAYIS</P>}
+                if (DateTime.Now.Month == 6)
+                {  <P>HAZİRAN</P>}
+                if (DateTime.Now.Month == 7)
+                {  <P>TEMMUZ</P>}
+                if (DateTime.Now.Month == 8)
+                {  <P>AĞUSTOS</P>}
+                if (DateTime.Now.Month == 9)
+                {  <P>EYLÜL</P>}
+                if (DateTime.Now.Month == 10)
+                {  <P>EKİM</P>}
+                if (DateTime.Now.Month == 11)
+                {  <P>KASIM</P>}
+                if (DateTime.Now.Month == 12)
+                {  <P>ARALIK</P>} }
+        </a><div class="featured-articles-list collapse"><div class="articles-list-inner"><i class="fa fa-spinner fa-pulse fa-2x"></i></div></div>
+    </div>				<nav id="masthead" class="navbar navbar-default site-navigation" role="banner">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".main-navigation"><i class="fa fa-bars"></i></button>
+            <a href="/Home/Index" rel="home" class="site-brand navbar-brand visible-xs visible-sm">
+                <img src="/Content/Home/wp-content/Images/logo1.png" title="DW Focus">
+            </a>
+            <button class="search-toggle visible-xs visible-sm" data-toggle="collapse" data-target=".under-navigation"><i class="fa fa-search"></i></button>
+        </div>
+        <div id="site-navigation" class="collapse navbar-collapse main-navigation" role="navigation">
+            <ul id="menu-main-menu" class="nav navbar-nav navbar-left dw-mega-menu-transition-default">
+                <li class="active dw-mega-menu-hover item-243 menu-home"><a href="/Home/Index">AnaSayfa</a></li>
+                @foreach (AnaKategori anaktg in ViewBag.anakategoriler)
+            {
+                    <li class="dw-mega-menu-full-width dw-mega-menu-hover item-244 menu-business color-@anaktg.Renk">
+                        <a href="/Home/KategoriDetay/@anaktg.id">@anaktg.Adi</a><div class="dw-mega-menu">
+                            <ul class="dw-sub-menu dw-mega-menu-tabs">
+                                @foreach (AltKategori altktg in ViewBag.altkategoriler)
+                                {
+                                    if (altktg.AnaKategoriID == anaktg.id)
+                                    {
+                                        <li class="dw-mega-menu-tab dw-mega-menu-hover item-926 menu-@altktg.Adi">
+                                            <a>@altktg.Adi</a>
+                                            <ul class="dw-sub-menu">
+                                                <li class="dw-mega-menu-hover item-1096 menu-dw-focus-news-grid-@altktg.Adi">
+                                                    <div class="dw-megamenu-widget">
+                                                        <div id="news-grid-4" class="widget dw_focus_widget_news_grid">
+                                                            <div class="">
+
+                                                                <div class="news-grid">
+                                                                    <div class="row">
+                                                                        @{
+                                                                            int say = 0;
+                                                                        }
+                                                                        @foreach (Haber hbr in ViewBag.haberler)
+                                                                        {
+                                                                            if (hbr.KategoriID == altktg.id)
+                                                                            {
+                                                                                <div class="col-sm-4">
+                                                                                    <article class="post-535 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-personal-finance tag-business-day tag-online-business">
+                                                                                        <div class="entry-thumbnail"><a href="/Home/HaberDetay/@hbr.id"><img width="230" height="119" src="@hbr.Resim.Url" class="attachment-dw-focus-archive size-dw-focus-archive wp-post-image" alt="" srcset="@hbr.Resim.Url 230w, @hbr.Resim.Url 640w, @hbr.Resim.Url 770w" sizes="(max-width: 230px) 100vw, 230px" /></a></div>
+                                                                                        <h3 class="entry-title"><a href="/Home/HaberDetay/@hbr.id">@hbr.Baslik</a></h3>
+                                                                                        <div class="entry-meta">
+                                                                                            <span class="entry-date"><i class="fa fa-clock-o"></i>@hbr.EklenmeTarihi</span>
+                                                                                        </div>
+                                                                                    </article>
+                                                                                </div>
+                                                                                say++;
+                                                                                if (say == 3)
+                                                                                {
+                                                                                    break;
+                                                                                }
+                                                                            }
+
+
+                                                                        }
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                                                                }
+
+                                                                            }
+
+
+                            </ul>
+                        </div>
+                    </li>
+                                                                            }
+
+
+
+
+            </ul>
+        </div>
+    </nav>
+    <div class="under-navigation hidden-xs hidden-sm">
+        <div class="row">
+            <div class="col-md-9 hidden-xs hidden-sm">
+                <aside id="news-ticker-2" class="widget dw_focus_widget_news_ticker">
+                    <h2 class="widget-title">Populer Haberler</h2>		<div class="news-ticker-wrap headlines" data-interval="4000">
+                        <ul>
+                            @foreach (Haber hbrcik in ViewBag.Populer)
+                            {
+                                <li>
+                                    <a href="/Home/HaberDetay/@hbrcik.id">@hbrcik.Baslik</a>
+                                    <span class="post-date">@hbrcik.EklenmeTarihi</span>
+                                </li>
+                            }
+
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-md-3">
+                <form method="post" id="searchform" action="/Home/AramaSonuclari">
+                    <input type="text"  id="validationDefault01"  class="form-control"  placeholder="Haber Ara" name="ArananString" required>
+                    <input type="submit" class="search-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

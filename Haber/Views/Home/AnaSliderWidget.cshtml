@@ -1,0 +1,113 @@
+﻿
+
+
+<aside id="news-slider-2" class="widget dw_focus_widget_news_slider">
+    <div id="carousel-news-slider-2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            @{
+                int aktif = 0;
+
+                foreach (Haber.Models.Haber item in ViewBag.Anahaber)
+                {
+                    if (aktif == 0)
+                    {
+                        <div class="item active">
+                            <article class="carousel-entry">
+                                @if (item.ResımID != null)
+                                {
+                                    <a href="HaberDetay/@item.id"><img width="710" height="400" src="@item.Resim.Url" class="attachment-dw-focus-slider size-dw-focus-slider wp-post-image" alt=""></a>
+
+                                }
+
+                                <div class="carousel-caption">
+                                    <div class="entry-meta hidden-xs">
+                                        <span class="entry-date"><i class="fa fa-clock-o"></i>@item.EklenmeTarihi</span>
+                                        <span class="entry-author">
+                                            <i class="fa fa-user"></i> @if (item.Yazar != null)
+                                            {
+                                                @(item.Yazar)
+                                            }
+                                        </span>
+
+                                    </div>
+                                    <h3 class="entry-title"><a href="/Home/HaberDetay/@item.id">@item.Baslik</a></h3>
+                                </div>
+                            </article>
+                        </div>
+                        aktif = 1;
+                    }
+                    else
+                    {
+                        <div class="item">
+                            <article class="carousel-entry">
+                                @if (item.ResımID != null)
+                                {
+                                    <a href="/Home/HaberDetay/@item.id"><img width="710" height="400" src="@item.Resim.Url" class="attachment-dw-focus-slider size-dw-focus-slider wp-post-image" alt=""></a>
+
+                                }
+
+                                <div class="carousel-caption">
+                                    <div class="entry-meta hidden-xs">
+                                        <span class="entry-date"><i class="fa fa-clock-o"></i>@item.EklenmeTarihi</span>
+                                        <span class="entry-author">
+                                            <i class="fa fa-user"></i> @if (item.Yazar != null)
+                                            {
+                                                @(item.Yazar)
+                                            }
+                                        </span>
+
+                                    </div>
+                                    <h3 class="entry-title"><a href="Home/HaberDetay/@item.id">@item.Baslik</a></h3>
+                                </div>
+                            </article>
+                        </div>
+                    }
+
+
+                }
+
+            }
+
+
+        </div>
+        <div class="carousel-navigation hidden-xs hidden-sm">
+            <h2 class="widget-title">Haberler</h2>
+            <ol class="carousel-title-indicators">
+                @{
+                    int say = 0;
+                    int aktifsl = 0;
+
+                    foreach (Haber.Models.Haber item in ViewBag.Anahaber)
+                    {
+                        if (say != null)
+                        {
+                            if (aktifsl == 0)
+                            {
+                                <li data-target="#carousel-news-slider-2" data-slide-to="@say" class="active">@item.Baslik</li>
+                                aktifsl = 1;
+                            }
+                            else
+                            {
+                                <li data-target="#carousel-news-slider-2" data-slide-to="@say" class="">@item.Baslik</li>
+                            }
+
+                            say++;
+                        }
+                        else
+                        {
+
+                        }
+                    }
+
+                }
+            </ol>
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-news-slider-2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-news-slider-2" data-slide-to="1" class=""></li>
+                <li data-target="#carousel-news-slider-2" data-slide-to="2" class=""></li>
+                <li data-target="#carousel-news-slider-2" data-slide-to="3" class=""></li>
+                <li data-target="#carousel-news-slider-2" data-slide-to="4" class=""></li>
+            </ol>
+        </div>
+    </div>
+</aside>

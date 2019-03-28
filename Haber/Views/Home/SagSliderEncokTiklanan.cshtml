@@ -1,0 +1,41 @@
+﻿@using Haber.Models;
+
+<aside id="news-grid-2" class="widget dw_focus_widget_news_grid">
+    <div class="color-green">
+        <h2 class="widget-title">
+            <p>Bugun En Çok Okunanlar</p>
+        </h2>
+        <div class="news-grid">
+
+            @{
+
+                foreach (Haber item in ViewBag.haber)
+                {
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <article class="post-535 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-personal-finance tag-business-day tag-online-business">
+                                    @if (item.ResımID != null)
+                                    {
+                                        <div class="entry-thumbnail"><a href="/Home/HaberDetay/@item.id"><img width="230" height="119" src="@item.Resim.Url" class="attachment-dw-focus-archive size-dw-focus-archive wp-post-image" alt="" srcset="@item.Resim.Url 230w, @item.Resim.Url 640w, @item.Resim.Url 770w" sizes="(max-width: 230px) 100vw, 230px"></a></div>
+                                    }
+
+                                     <h3 class="entry-title"><a href="/Home/HaberDetay/@item.id">@item.Baslik</a></h3>
+                                    <div class="entry-meta">
+                                        <span class="entry-date"><i class="fa fa-clock-o"></i>@DateTime.Now.ToShortDateString()</span>
+                                    </div>
+                                    <div class="entry-summary">
+                                        <p>@item.KisaAciklama</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                  
+                }
+
+
+            }
+
+        </div>
+    </div>
+</aside>

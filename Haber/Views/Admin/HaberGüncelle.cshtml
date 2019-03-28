@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Haber Güncelle - Yönetim Paneli";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using Haber.Models
+@model Haber
+<div class="col-lg-12">
+    <section class="panel">
+        <header class="panel-heading">
+            <p>Şuan <b>@Model.Baslik </b> Başlıklı Haberi düzenliyorsunuz !</p>
+        </header>
+
+        <div class="panel-body">
+            <form role="form" method="post" action="HaberGüncelle">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Haber Başlığı</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" value="@Model.Baslik" name="Baslik">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Kısa Açıklama</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" value="@Model.KisaAciklama" name="KisaAciklama">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">İçerik</label>
+                    <textarea class="form-control" rows="10" name="Icerik" id="validationDefault01" required>@Model.Icerik</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Haber Kategori Seçiniz</label>
+                    
+                    <select name="KategoriID" class="form-control m-bot15">
+                        @foreach (AltKategori item in ViewBag.altkategoriler)
+                        {
+                            if (item.id == Model.KategoriID)
+                            {
+                                <option value="@item.id" selected>@item.Adi </option>
+                            }
+                            else
+                            {
+                                <option value="@item.id">@item.Adi </option>
+                            }
+                        }
+                    </select>
+
+
+                </div>
+
+                <button name="id" value="@Model.id" type="submit" class="btn btn-info">Kaydet</button>
+            </form>
+
+        </div>
+    </section>
+</div>

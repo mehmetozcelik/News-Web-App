@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Profil Ekle - Yönetim Paneli";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@using Haber.Models
+
+<div class="col-lg-12">
+    <section class="panel">
+        <header class="panel-heading">
+            Profil Ekle
+        </header>
+
+        <div class="panel-body">
+            <form role="form" method="post" action="ProfilEkle">
+                
+            
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Profil Adı</label>
+                    <input type="text" class="form-control" id="validationDefault01" name="roladi"  maxlength="50" required>
+                </div>
+
+
+                <button type="submit" class="btn btn-info pull-right">Kaydet</button>
+            </form>
+
+        </div>
+    </section>
+</div>
